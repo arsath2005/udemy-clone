@@ -57,6 +57,9 @@ body{
 
 
 }
+.navbar__s4{
+    display: none;
+}
 .mylearning{
 position: relative;
 cursor: pointer;
@@ -96,13 +99,15 @@ cursor: pointer;
     color:black;
     border: solid #A435F0 1px;
 }
-sale-images img{
-    width:100%;
+.sale-images img{
+    width: 100%;
     
     
 }
 .sale-images{
-position: relative;}
+position: relative;
+}
+
 .sale-images__offer{
 width: 35%;
 border: solid black 2px;
@@ -196,6 +201,30 @@ margin: 20px;
     margin: 20px;
     align-items: center;
 }
+/*media gueries*/
+@media screen and  (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+
+    
+}
+@media screen and (max-width:600px){
+    .course-card{
+        flex-basis: 40%;
+    }
+    .navbar__s3,.navbar__s2{
+        display: none;
+
+    }
+    .navbar__s4{
+        display: block;
+    }
+    
+}
+
+
+
 
 
 
